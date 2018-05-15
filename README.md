@@ -31,9 +31,6 @@ And this capture mode templates (defined inside `templates` folder):
      ("e" "Event" entry
       (file "templates/calendar.org")
       (file "templates/templates/tpl-event.txt"))
-     ("l" "Lecture" entry
-      (file+headline "templates/backlog.org" "Lectures")
-      (file "templates/templates/tpl-lecture.txt"))
      ("s" "Someday" entry
       (file "templates/someday.org")
       (file "templates/templates/tpl-someday.txt"))
