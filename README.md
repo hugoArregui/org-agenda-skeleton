@@ -1,6 +1,6 @@
-# Emacs settings
+# Settings
 
-I define this agenda custom commands:
+## Agenda custom commands
 
 ```
  '(org-agenda-custom-commands
@@ -19,7 +19,9 @@ I define this agenda custom commands:
      ("g" "Goals" tags "GOAL-TODO=\"GOAL\"" nil))))
 ```
 
-And this capture mode templates (defined inside `templates` folder):
+## Capture templates
+
+(defined inside `templates` folder)
 
 ```
  '(org-capture-templates
@@ -58,4 +60,33 @@ And this capture mode templates (defined inside `templates` folder):
      ("h" "Habit" entry
       (file "calendar.org")
       (file "templates/tpl-habit.txt")))))
+```
+
+## Misc
+
+```
+
+(setq
+ org-agenda-start-on-weekday nil
+ org-agenda-span 7)
+
+(setq
+ org-log-into-drawer "LOGBOOK"
+ org-refile-targets (quote ((org-agenda-files :level . 1)))
+ org-refile-use-outline-path  (quote file)
+ org-refile-allow-creating-parent-nodes (quote confirm))
+
+(setq org-agenda-repeating-timestamp-show-all nil)
+
+(defun org-agenda-toggle-custom-habits ()
+  "Toggle display of custom habits in an agenda buffer."
+  (interactive)
+  (org-agenda-check-type t 'agenda)
+  (setq org-custom-habit-show-habits (not org-custom-habit-show-habits))
+  (if org-custom-habit-show-habits
+      (org-agenda-filter-by-tag "-HABIT" ?\s)
+    (org-agenda-filter-show-all-tag))
+  (org-agenda-redo))
+
+(org-defkey org-agenda-mode-map "H" 'org-agenda-toggle-custom-habits)
 ```
