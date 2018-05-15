@@ -1,0 +1,7 @@
+#+SEQ_TODO: SCHEDULED(s) | DONE(d) CANCELLED(c)
+#+ARCHIVE: archive.org::
+
+* SCHEDULED An habit                                                  :HABIT:
+  SCHEDULED: <2018-05-16 mié>
+* SCHEDULED A scheduled event
+  SCHEDULED: <2018-05-21 lun>

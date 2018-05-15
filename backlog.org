@@ -1,0 +1,10 @@
+#+SEQ_TODO: IN(i) WAITING_FOR(w) GOAL(g) TODO(t) NEXT(n) IN_PROGRESS(p) | DONE(d) CANCELLED(c)
+#+ARCHIVE: archive.org::
+
+* GOAL Epic Goals                                            :GOAL:EPIC_GOAL:
+** foo                                                                  :FOO:
+* GOAL Long Goals (2-5 years from now)                       :GOAL:LONG_GOAL:
+* GOAL Medium Goals (6 months up to 2 years)               :GOAL:MEDIUM_GOAL:
+* GOAL Short Goals (next 6 months)                          :GOAL:SHORT_GOAL:
+
+* TODO Do something                                                     :FOO:

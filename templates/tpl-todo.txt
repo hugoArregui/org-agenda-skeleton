@@ -1,0 +1,5 @@
+* TODO %^{Title}
+  %?
+  :LOGBOOK:
+  - Added: %U
+  :END:
